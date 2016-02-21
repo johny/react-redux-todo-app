@@ -6,7 +6,7 @@ import { ADD_TODO } from '../actions/actions.js'
 function todos(state = [], action) {
   switch (action.type) {
     case ADD_TODO:
-      return Object.assign({}, state, {
+      return [
         ...state,
         {
           text: action.text,
