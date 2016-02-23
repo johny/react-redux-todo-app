@@ -10,7 +10,7 @@ export default class App extends Component {
         <h1 className="app-title">TodoApp</h1>
         <div className="app-content">
           <TodoInput />
-          <TodoList />
+          <TodoList todos={[{id: 1, text: 'Hello world'}]} />
         </div>
         <footer className="app-footer">
           <span>TodoApp with React and Redux.</span>
