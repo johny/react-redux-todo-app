@@ -30,6 +30,7 @@
     "webpack-dev-server": "^1.12.1"
   },
   "dependencies": {
+    "node-uuid": "^1.4.7",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
     "react-redux": "^4.4.0",

@@ -1,6 +1,6 @@
-import { combineReducers } from 'redux'
-
-import { ADD_TODO } from '../actions/actions.js'
+import { combineReducers } from 'redux';
+import { ADD_TODO } from '../actions/actions.js';
+import uuid from 'node-uuid';
 
 // todos reducer
 function todos(state = [], action) {
@@ -9,6 +9,7 @@ function todos(state = [], action) {
       return [
         ...state,
         {
+          id: uuid.v4(),
           text: action.text,
           done: false
         }

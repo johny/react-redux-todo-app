@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import TodoList from './TodoList';
+import VisibleTodoList from './VisibleTodoList';
 import TodoInput from './TodoInput';
 
 export default class App extends Component {
@@ -10,7 +10,7 @@ export default class App extends Component {
         <h1 className="app-title">TodoApp</h1>
         <div className="app-content">
           <TodoInput />
-          <TodoList todos={[{id: 1, text: 'Hello world'}]} />
+          <VisibleTodoList />
         </div>
         <footer className="app-footer">
           <span>TodoApp with React and Redux.</span>

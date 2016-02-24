@@ -48,7 +48,8 @@
         color: #999;
       }
 
-      /* Todo Input Bar */
+      /* Todo Input Bar
+      ---------------------------------------*/
       .todo-input {
         margin: 0 0 1rem 0;
       }
@@ -64,6 +65,43 @@
 
       .todo-input__input:focus {
         outline: none;
+      }
+
+      /* TodoList
+      ---------------------------------------*/
+      .todo-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .todo-list__item {
+        margin: 0 0px;
+        padding: 0.5rem 0px;
+        border-bottom: 1px dashed #eee;
+        cursor: pointer;
+      }
+
+      .todo-list__item:last-child {
+        border: none;
+      }
+
+
+      .todo-list__item::before {
+        content: '✔';
+        color: #ddd;
+        display: inline-block;
+        margin-right: 0.5rem;
+        border-radius: 30px;
+        line-height: 34px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        background: #fafafa;
+      }
+
+      .todo-list__item:hover::before {
+        color: #555;
       }
 
     </style>
